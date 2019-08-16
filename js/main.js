@@ -40,25 +40,13 @@ function ponerFicha(clickid) {
 
 function ponerFicha2(clickid) {
 
-    // var a1 = document.getElementsByClassName("col1");
-
-    // var columnas = [
-    //     [document.getElementsByClassName("col1")],
-    //     [document.getElementsByClassName("col2")],
-    //     [document.getElementsByClassName("col3")],
-    // ]
-    // alert((columnas[1][3]).id);
     var arr = [];
 
-    //   var temp = document.getElementsByClassName("col1");
 
     arr[0] = [document.getElementsByClassName("col1")];
 
     arr[1] = [document.getElementsByClassName("col2")];
 
-
-    //  alert(arr[0][0][0].id);
-    //  alert(arr[0][0][1].id);
 
     //  alert(arr[1][0][5].id);  acceso al elemento 5 de la columna 1
 
