@@ -1,44 +1,44 @@
-var jugadorActual;
+var jugadorActual = 1;
+var srcimg1 = "img/ColorFichaJugador1.png";
+var srcimg2 = "img/ColorFichaJugador2.png";
 
-
-function ponerFicha(){
-//    document.getElementById("imgElementoFichas11").src="img/ColorFichaJugador2.png";
- 
-
-//    document.getElementById("imgElementoFichas24").src="img/ColorFichaJugador2.png";
-
-//    var a = document.getElementsByClassName("imgFicha");
-//    console.log(a);
-   
-//    document.getElementById(a[3].id).src="img/ColorFichaJugador1.png";
-
+function seleccionarInicial(){
     
-    var a = document.getElementsByClassName("col1");
- 
-    // for(let i=0;i<a.length;i++){
-    //    document.getElementById(a[i].id).src="img/ColorFichaJugador1.png";
-    // }
+}
 
-    for(let i = (a.length-1) ;i >= 0;i--){
-       
+
+function ponerFicha() {
+    var a = document.getElementsByClassName("col1");
+
+
+    for (let i = (a.length - 1); i >= 0; i--) {
+
         let b = document.getElementById(a[i].id);
 
-        // a[i].id == ""?b.src="img/ColorFichaJugador1.png";i--;
 
-        if(b.src==""){
-            b.src="img/ColorFichaJugador1.png";
+
+        if (b.src == "") {
+            if (jugadorActual == 1) {
+                b.src = srcimg1;
+                jugadorActual = 2;
+                break;
+            }
+
+            b.src = srcimg2;
+            jugadorActual = 1;
             break;
         }
 
-        // b.src="img/ColorFichaJugador1.png";
 
-    //    document.getElementById(a[i].id).src="img/ColorFichaJugador1.png";
     }
 
-
+    var a2 = document.getElementsByClassName("col2");
 
 }
 
-function validarAbajo(){
+function ponerFicha2() {
+
+    var a = document.getElementsByClassName("col1");
+
 
 }
