@@ -1,0 +1,116 @@
+body{
+    /* width: 1080px;
+    height: 1920px; */
+     margin: 0px;
+     width: 100%;
+     height: 100%;
+ 
+    background-image: url(../img/Fondo.png);
+    background-size:cover;
+
+   
+
+    
+     
+    
+}
+
+
+.rowbuttonIndex{
+    width: 100%;
+    height: 100%;
+  
+    
+}
+
+
+.seccionbuttonIndex{
+    text-align: center;
+    
+    margin: 4%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.buttonIndex{
+    height: 150%;
+    width: 100%;
+}
+
+.rowBotonesAtrasAcercade{
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    left: 2%;
+
+}
+
+
+.rowBotonesAtrasAcercade #botonAtras button{
+    float: left;
+    margin-left: 5%;
+}
+
+.rowBotonesAtrasAcercade #botonacercade button{
+    float: right;
+    margin-right: 5%;
+}
+
+
+.rowestadisticas table{
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+}
+
+/* ----------------------------------JUEGO---------------------------------------- */
+
+/* .main{
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    
+} */
+
+.tablero{
+    
+    
+    
+    height: 250px;
+    width: 90%;
+    /* position: absolute;
+    top: 5%;
+    left: 5%;
+    bottom: 5%;
+    right: 5%; */
+    
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 40%;
+    margin-bottom: auto; */
+}
+
+.colTablero{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 12%;
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    text-align: center;
+   
+}
+
+.contenedorElementoFicha{
+    /* display: inline-flex; */
+    width: 100%;
+    height: 16.6%;
+    background: transparent;
+}
+
+.contenedorElementoFicha img{
+    width: 100%;
+    height: 100%;
+}
+
