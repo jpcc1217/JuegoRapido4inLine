@@ -53,12 +53,13 @@ function ponerFicha(clickid) {
     arrayElementos[6] = [document.getElementsByClassName("col7")];
 
 
-    //  alert(arrayElementos[1][0][5].id);  acceso al elemento 5 de la columna 1
+    // alert(arrayElementos[0][0][5].id);  acceso al elemento 6 de la columna 1
 
     //alert(arrayElementos[0][0].length)  length de la columna 1
 
     var columnaActual = clickid.replace('col', '');
     var k = (parseInt(columnaActual, 10) - 1);
+
 
     for (let i = 5; i >= 0; i--) {
         var tempb = document.getElementById(arrayElementos[k][0][i].id);
@@ -77,27 +78,51 @@ function ponerFicha(clickid) {
 
         jugadorActual == 2;
 
-    }
 
+
+
+
+
+    }
 
 
 
 }
 
 function ganador() {
-    // let k = 1;
-    // var a = document.getElementById("s"+k+"7");
+
+    var a = generarFilas();
+
+
+
+    alert(a[0][0][0].src);
+
+    var b = a[0][0][0].src;
+
+    c = b.includes("ColorFichaJugador2.png");
+
+    alert(c);
+   
+
 
     //    filas posibles
-    var arrayfilas = [];
-    var arrfila1 = [];
-    for (let i = 1; i <= 7; i++) {
-        j=1;
-        arrfila1[i-1] = document.getElementById("s"+j+i);
+    // var arrayfilas = [];
 
-    }
-    // alert("asd");
-    alert(arrfila1[0].id);
+    // var i = 1;
+    // var j = 1;
+    // for (i = 1; i <= 6; i++) {
+    //     var arrfilatemp = [];
+    //     for (j = 1; j <= 7; j++) {
+    //         arrfilatemp[j - 1] = document.getElementById("s" + i + j);
+    //     }
+    //     arrayfilas[i - 1] = [arrfilatemp];
+    // }
+    // var a = arrayfilas[0][0][0].id;
+
+    // alert(a);
+
+
+    // alert(arrayfilas[1][0][6].id);
 
 
     // columnas posibles
@@ -108,4 +133,20 @@ function ganador() {
 
     // a.style.background= "black";
 
+}
+
+function generarFilas() {
+    var arrayfilas = [];
+
+    var i = 1;
+    var j = 1;
+    for (i = 1; i <= 6; i++) {
+        var arrfilatemp = [];
+        for (j = 1; j <= 7; j++) {
+            arrfilatemp[j - 1] = document.getElementById("imgElementoFichas" + i + j);
+        }
+        arrayfilas[i - 1] = [arrfilatemp];
+    }
+
+    return arrayfilas;
 }
