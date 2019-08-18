@@ -67,11 +67,13 @@ function ponerFicha(clickid) {
         if (tempb.src == "") {
             if (jugadorActual == 1) {
                 tempb.src = srcimg1;
+                tempb.classList.add("fichap1");
                 jugadorActual = 2;
                 break;
             }
 
             tempb.src = srcimg2;
+            tempb.classList.add("fichap2");
             jugadorActual = 1;
             break;
         }
@@ -85,9 +87,43 @@ function ponerFicha(clickid) {
 
     }
 
-
+    
 
 }
+
+function ganadormejormetodo(){
+    
+    var a = document.getElementsByClassName("fichap1");
+    
+    var b = [];
+
+    for(let i = 0;i<a.length;i++){
+       b[i] = a[i].parentElement.id.toString();
+    }
+ 
+
+
+    // alert(typeof(parseInt(b[0][1])));
+    
+    // if(b[0][2]==1){
+    //     alert("asdasdasd");
+    // }
+
+    alert(b); 
+
+    // if(b.includes("s61")){
+    //      alert("asdasdasd");
+    // }
+    
+    
+     
+    // for(let i = 0;i<b.length;i++){
+    //      for(let j = 0;j<b.length;j++){
+           
+    //     }
+    //  }
+}
+
 
 function ganador() {
 
@@ -95,9 +131,11 @@ function ganador() {
 
 
 
-    alert(a[0][0][0].src);
+    alert(a[0][0][0].parentElement.id);
 
     var b = a[0][0][0].src;
+
+
 
     c = b.includes("ColorFichaJugador2.png");
 
@@ -150,3 +188,4 @@ function generarFilas() {
 
     return arrayfilas;
 }
+
