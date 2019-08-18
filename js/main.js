@@ -87,41 +87,61 @@ function ponerFicha(clickid) {
 
     }
 
-    
+
 
 }
 
-function ganadormejormetodo(){
-    
+function ganadormejormetodo() {
+
     var a = document.getElementsByClassName("fichap1");
-    
+
     var b = [];
 
-    for(let i = 0;i<a.length;i++){
-       b[i] = a[i].parentElement.id.toString();
+    for (let i = 0; i < a.length; i++) {
+        b[i] = a[i].parentElement.id.toString();
     }
- 
+
 
 
     // alert(typeof(parseInt(b[0][1])));
-    
+
     // if(b[0][2]==1){
     //     alert("asdasdasd");
     // }
 
-    alert(b); 
+    alert(b);
 
     // if(b.includes("s61")){
     //      alert("asdasdasd");
     // }
-    
-    
-     
-    // for(let i = 0;i<b.length;i++){
-    //      for(let j = 0;j<b.length;j++){
-           
+
+
+    for (let i = 1; i <= 6; i++) {
+        for (let j = 1; j <= 4; j++) {
+            let j1 = j + 1;
+            let j2 = j + 2;
+            let j3 = j + 3;
+            if (b.includes("s" + i + j) && b.includes("s" + i + j1) && b.includes("s" + i + j2) && b.includes("s" + i + j3)) {
+                alert("ganador");
+            }
+
+        }
+    }
+
+    // var bp = ["s14","s12","s13","s11"]
+    // for (let i = 1; i <= 6; i++) {
+    //     for (let j = 1; j <= 4; j++) {
+    //         let j1 = j + 1;
+    //         let j2 = j + 2;
+    //         let j3 = j + 3;
+    //         if (bp.includes("s" + i + j) && bp.includes("s" + i + j1) && bp.includes("s" + i + j2) && bp.includes("s" + i + j3)) {
+    //             alert("ganador");
+    //         }
+
     //     }
-    //  }
+    // }
+
+
 }
 
 
@@ -140,7 +160,7 @@ function ganador() {
     c = b.includes("ColorFichaJugador2.png");
 
     alert(c);
-   
+
 
 
     //    filas posibles
