@@ -91,7 +91,7 @@ function ponerFicha(clickid) {
 
 }
 
-function ganadormejormetodo() {
+function ganadorplayer1() {
 
     var a = document.getElementsByClassName("fichap1");
 
@@ -102,27 +102,25 @@ function ganadormejormetodo() {
     }
 
 
-
-    // alert(typeof(parseInt(b[0][1])));
-
-    // if(b[0][2]==1){
-    //     alert("asdasdasd");
-    // }
-
-    alert(b);
-
-    // if(b.includes("s61")){
-    //      alert("asdasdasd");
-    // }
-
-
     for (let i = 1; i <= 6; i++) {
         for (let j = 1; j <= 4; j++) {
             let j1 = j + 1;
             let j2 = j + 2;
             let j3 = j + 3;
             if (b.includes("s" + i + j) && b.includes("s" + i + j1) && b.includes("s" + i + j2) && b.includes("s" + i + j3)) {
-                alert("ganador");
+                alert("ganador player 1");
+            }
+
+        }
+    }
+
+    for (let i = 1; i <= 7; i++) {
+        for (let j = 1; j <= 3; j++) {
+            let j1 = j + 1;
+            let j2 = j + 2;
+            let j3 = j + 3;
+            if (b.includes("s" + j + i) && b.includes("s" + j1 + i) && b.includes("s" + j2 + i) && b.includes("s" + j3 + i)) {
+                alert("ganador player 1");
             }
 
         }
@@ -141,71 +139,120 @@ function ganadormejormetodo() {
     //     }
     // }
 
+    // alert(typeof(parseInt(b[0][1])));
 
-}
-
-
-function ganador() {
-
-    var a = generarFilas();
-
-
-
-    alert(a[0][0][0].parentElement.id);
-
-    var b = a[0][0][0].src;
-
-
-
-    c = b.includes("ColorFichaJugador2.png");
-
-    alert(c);
-
-
-
-    //    filas posibles
-    // var arrayfilas = [];
-
-    // var i = 1;
-    // var j = 1;
-    // for (i = 1; i <= 6; i++) {
-    //     var arrfilatemp = [];
-    //     for (j = 1; j <= 7; j++) {
-    //         arrfilatemp[j - 1] = document.getElementById("s" + i + j);
-    //     }
-    //     arrayfilas[i - 1] = [arrfilatemp];
+    // if(b[0][2]==1){
+    //     alert("asdasdasd");
     // }
-    // var a = arrayfilas[0][0][0].id;
 
-    // alert(a);
+     // if(b.includes("s61")){
+    //      alert("asdasdasd");
+    // }
 
-
-    // alert(arrayfilas[1][0][6].id);
-
-
-    // columnas posibles
-
-    // diagonal arriba izq-der
-
-    // diagonal arriba der-izq
-
-    // a.style.background= "black";
 
 }
 
-function generarFilas() {
-    var arrayfilas = [];
+function ganadorplayer2(){
+    var a = document.getElementsByClassName("fichap2");
 
-    var i = 1;
-    var j = 1;
-    for (i = 1; i <= 6; i++) {
-        var arrfilatemp = [];
-        for (j = 1; j <= 7; j++) {
-            arrfilatemp[j - 1] = document.getElementById("imgElementoFichas" + i + j);
-        }
-        arrayfilas[i - 1] = [arrfilatemp];
+    var b = [];
+
+    for (let i = 0; i < a.length; i++) {
+        b[i] = a[i].parentElement.id.toString();
     }
 
-    return arrayfilas;
+
+    for (let i = 1; i <= 6; i++) {
+        for (let j = 1; j <= 4; j++) {
+            let j1 = j + 1;
+            let j2 = j + 2;
+            let j3 = j + 3;
+            if (b.includes("s" + i + j) && b.includes("s" + i + j1) && b.includes("s" + i + j2) && b.includes("s" + i + j3)) {
+                alert("ganador player 2");
+            }
+
+        }
+    }
+
+    for (let i = 1; i <= 7; i++) {
+        for (let j = 1; j <= 3; j++) {
+            let j1 = j + 1;
+            let j2 = j + 2;
+            let j3 = j + 3;
+            if (b.includes("s" + j + i) && b.includes("s" + j1 + i) && b.includes("s" + j2 + i) && b.includes("s" + j3 + i)) {
+                alert("ganador player 2");
+            }
+
+        }
+    }
 }
+
+// -------------------------------------------------------------------------------------------------------------
+
+// Primera Prueba de funcion para determinar ganador, la dejo porque si
+
+
+// function ganador() {
+
+//     var a = generarFilas();
+
+
+
+//     alert(a[0][0][0].parentElement.id);
+
+//     var b = a[0][0][0].src;
+
+
+
+//     c = b.includes("ColorFichaJugador2.png");
+
+//     alert(c);
+
+
+
+//     //    filas posibles
+//     var arrayfilas = [];
+
+//     var i = 1;
+//     var j = 1;
+//     for (i = 1; i <= 6; i++) {
+//         var arrfilatemp = [];
+//         for (j = 1; j <= 7; j++) {
+//             arrfilatemp[j - 1] = document.getElementById("s" + i + j);
+//         }
+//         arrayfilas[i - 1] = [arrfilatemp];
+//     }
+//     var a = arrayfilas[0][0][0].id;
+
+//     alert(a);
+
+
+//     alert(arrayfilas[1][0][6].id);
+
+
+//     // columnas posibles
+
+//     // diagonal arriba izq-der
+
+//     // diagonal arriba der-izq
+
+//     a.style.background= "black";
+
+// }
+
+// function generarFilas() {
+//     var arrayfilas = [];
+
+//     var i = 1;
+//     var j = 1;
+//     for (i = 1; i <= 6; i++) {
+//         var arrfilatemp = [];
+//         for (j = 1; j <= 7; j++) {
+//             arrfilatemp[j - 1] = document.getElementById("imgElementoFichas" + i + j);
+//         }
+//         arrayfilas[i - 1] = [arrfilatemp];
+//     }
+
+//     return arrayfilas;
+// }
 
