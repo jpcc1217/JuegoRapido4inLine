@@ -8,38 +8,6 @@ function seleccionarInicial() {
 
 }
 
-
-// function ponerFicha(clickid) {
-
-
-
-//     var a = document.getElementsByClassName("col1");
-
-
-//     for (let i = 5; i >= 0; i--) {
-
-//         let b = document.getElementById(a[i].id);
-
-
-
-//         if (b.src == "") {
-//             if (jugadorActual == 1) {
-//                 b.src = srcimg1;
-//                 jugadorActual = 2;
-//                 break;
-//             }
-
-//             b.src = srcimg2;
-//             jugadorActual = 1;
-//             break;
-//         }
-
-
-//     }
-
-
-// }
-
 function ponerFicha(clickid) {
 
 
@@ -68,27 +36,19 @@ function ponerFicha(clickid) {
             if (jugadorActual == 1) {
                 tempb.src = srcimg1;
                 tempb.classList.add("fichap1");
+                ganadorplayer1();
                 jugadorActual = 2;
                 break;
             }
 
             tempb.src = srcimg2;
             tempb.classList.add("fichap2");
+            ganadorplayer2();
             jugadorActual = 1;
             break;
         }
-
         jugadorActual == 2;
-
-
-
-
-
-
     }
-
-
-
 }
 
 function ganadorplayer1() {
@@ -126,33 +86,9 @@ function ganadorplayer1() {
         }
     }
 
-    // var bp = ["s14","s12","s13","s11"]
-    // for (let i = 1; i <= 6; i++) {
-    //     for (let j = 1; j <= 4; j++) {
-    //         let j1 = j + 1;
-    //         let j2 = j + 2;
-    //         let j3 = j + 3;
-    //         if (bp.includes("s" + i + j) && bp.includes("s" + i + j1) && bp.includes("s" + i + j2) && bp.includes("s" + i + j3)) {
-    //             alert("ganador");
-    //         }
-
-    //     }
-    // }
-
-    // alert(typeof(parseInt(b[0][1])));
-
-    // if(b[0][2]==1){
-    //     alert("asdasdasd");
-    // }
-
-     // if(b.includes("s61")){
-    //      alert("asdasdasd");
-    // }
-
-
 }
 
-function ganadorplayer2(){
+function ganadorplayer2() {
     var a = document.getElementsByClassName("fichap2");
 
     var b = [];
