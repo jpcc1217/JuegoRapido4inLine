@@ -1,13 +1,13 @@
+
 body{
     /* width: 1080px;
     height: 1920px; */
-     margin: 0px;
-     width: 100%;
-     height: 100%;
+     margin: 0;
+     border: 0;
      /* border-width: 0px;
      border-style: hidden */
  
-    background-image: url(../img/Fondo.png);
+    background-image: url(../img/Pantallazo6.png);
     background-size:cover;
 
    
@@ -69,11 +69,13 @@ body{
 
 .main{
     background: black;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
+    margin: 0;
+    border: 0;
     
     /* background: transparent; */
     
@@ -92,11 +94,15 @@ body{
 }
 
 .tablero{
-    height: 450px;
+    background: red;
+    display: inline-flex;
+    height: 600px;
     width: 90%;
+    justify-content: center;
+    align-items: center;
     /* background: yellow; */
-    position:absolute;
-    top: 20%;
+    /* position:absolute; */
+    /* top: 20%; */
     /* top: 15%;
     left: 15%;
     bottom: 15%;
@@ -104,38 +110,48 @@ body{
 
     /* margin: 0px; */
     
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
     /* margin-top: auto;
     margin-bottom: auto; */
 }
 
 .colTablero{
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 12%;
-    height: 100%;
     display: inline-block;
+    margin: 0;
+    /* margin-left: 0px;
+    margin-right: 0px; */
     cursor: pointer;
     /* background: transparent; */
     text-align: center;
+    background: yellow;
    
 }
 
 .contenedorElementoFicha{
-    /* display: inline-flex; */
-    width: 100%;
-    height: 16.6%;
+    /* display:flex; */
+    background: gray;
+    width: 100px;
+    height: 100px;
+    line-height: 0;
+    border: 0px;
+    /* background: white; */
+    /* border-radius: 100%; */
     /* background: transparent;
     background-image: transparent; */
 }
 
 .contenedorElementoFicha img{
+    /* display:inline-block; */
+    line-height: 0;
+    background: transparent;
+    margin: 0px;
     width: 100%;
     height: 100%;
-    /* background: transparent; */
-    border-radius: 100%;
-    background: transparent;
+    border-style: none;
+    vertical-align: bottom;
+    /* border-radius: 100%; */
+
 }
 
 
