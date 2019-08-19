@@ -32,7 +32,7 @@ function ponerFicha(clickid) {
     for (let i = 5; i >= 0; i--) {
         var tempb = document.getElementById(arrayElementos[k][0][i].id);
 
-        if (tempb.src == "") {
+        if (tempb.src.includes("img/ColorFichaJugadorblanco.png")) {
             if (jugadorActual == 1) {
                 tempb.src = srcimg1;
                 tempb.classList.add("fichap1");
@@ -132,7 +132,8 @@ function ganadorplayer2() {
 }
 
 function metodoprueba(){
-    
+    var a = document.getElementById("imgElementoFichas67");
+    alert(a.src);
 }
 
 // -------------------------------------------------------------------------------------------------------------
