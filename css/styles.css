@@ -85,11 +85,17 @@ height: 100%;
 /* ----------------------------------JUEGO---------------------------------------- */
 
 .botonesatras{
-/* width: 100%;
-height: 100%; */
+width: 110px;
+height: 60px;
+margin-top: 5%;
 
-width: 100px;
-height: 100px;
+/* width: 100px;
+height: 100px; */
+}
+
+#columnasbotonestras{
+    text-align: center;
+
 }
 
 .mainjuego{
