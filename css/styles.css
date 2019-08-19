@@ -4,6 +4,8 @@ body{
      margin: 0px;
      width: 100%;
      height: 100%;
+     /* border-width: 0px;
+     border-style: hidden */
  
     background-image: url(../img/Fondo.png);
     background-size:cover;
@@ -48,12 +50,12 @@ body{
 
 .rowBotonesAtrasAcercade #botonAtras button{
     float: left;
-    margin-left: 5%;
+    margin-left: 15%;
 }
 
 .rowBotonesAtrasAcercade #botonacercade button{
     float: right;
-    margin-right: 5%;
+    margin-right: 15%;
 }
 
 
@@ -65,28 +67,46 @@ body{
 
 /* ----------------------------------JUEGO---------------------------------------- */
 
-/* .main{
+.main{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
-    background: yellow;
     
-} */
+    /* background: transparent; */
+    
+    /* top: 15%;
+    left: 15%;
+    bottom: 15%;
+    right: 15%;  */
+
+    /* margin: 0px; */
+    /* display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto; */
+    
+}
 
 .tablero{
-    
-    
-    
-    height: 250px;
+    height: 450px;
     width: 90%;
-    /* position: absolute;
-    top: 5%;
-    left: 5%;
-    bottom: 5%;
-    right: 5%; */
+    /* background: yellow; */
+    position:absolute;
+    top: 20%;
+    /* top: 15%;
+    left: 15%;
+    bottom: 15%;
+    right: 15%;  */
+
+    /* margin: 0px; */
     
     margin-left: auto;
     margin-right: auto;
-    /* margin-top: 40%;
+    /* margin-top: auto;
     margin-bottom: auto; */
 }
 
@@ -97,7 +117,7 @@ body{
     height: 100%;
     display: inline-block;
     cursor: pointer;
-    background: transparent;
+    /* background: transparent; */
     text-align: center;
    
 }
@@ -106,12 +126,16 @@ body{
     /* display: inline-flex; */
     width: 100%;
     height: 16.6%;
-    background: transparent;
+    /* background: transparent;
+    background-image: transparent; */
 }
 
 .contenedorElementoFicha img{
     width: 100%;
     height: 100%;
+    /* background: transparent; */
+    border-radius: 100%;
+    background: transparent;
 }
 
 

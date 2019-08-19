@@ -38,6 +38,7 @@ function ponerFicha(clickid) {
                 tempb.classList.add("fichap1");
                 ganadorplayer1();
                 jugadorActual = 2;
+                // alert("turno Jugador"+jugadorActual)
                 break;
             }
 
@@ -45,6 +46,7 @@ function ponerFicha(clickid) {
             tempb.classList.add("fichap2");
             ganadorplayer2();
             jugadorActual = 1;
+            // alert("turno Jugador"+jugadorActual)
             break;
         }
         jugadorActual == 2;
@@ -69,6 +71,7 @@ function ganadorplayer1() {
             let j3 = j + 3;
             if (b.includes("s" + i + j) && b.includes("s" + i + j1) && b.includes("s" + i + j2) && b.includes("s" + i + j3)) {
                 alert("ganador player 1");
+                location.href = "seleccionjugadores.html";
             }
 
         }
@@ -81,6 +84,7 @@ function ganadorplayer1() {
             let j3 = j + 3;
             if (b.includes("s" + j + i) && b.includes("s" + j1 + i) && b.includes("s" + j2 + i) && b.includes("s" + j3 + i)) {
                 alert("ganador player 1");
+                location.href = "seleccionjugadores.html";
             }
 
         }
@@ -105,6 +109,7 @@ function ganadorplayer2() {
             let j3 = j + 3;
             if (b.includes("s" + i + j) && b.includes("s" + i + j1) && b.includes("s" + i + j2) && b.includes("s" + i + j3)) {
                 alert("ganador player 2");
+                location.href = "seleccionjugadores.html";
             }
 
         }
@@ -117,10 +122,17 @@ function ganadorplayer2() {
             let j3 = j + 3;
             if (b.includes("s" + j + i) && b.includes("s" + j1 + i) && b.includes("s" + j2 + i) && b.includes("s" + j3 + i)) {
                 alert("ganador player 2");
+                location.href = "seleccionjugadores.html";
             }
 
         }
     }
+
+    
+}
+
+function metodoprueba(){
+    
 }
 
 // -------------------------------------------------------------------------------------------------------------
