@@ -17,6 +17,14 @@ body{
     
 }
 
+/* ----------------INDEX---------------- */
+
+.logoimg{
+    
+    width: 200px;
+    height: 200px;
+}
+
 
 .rowbuttonIndex{
     width: 100%;
@@ -29,14 +37,14 @@ body{
 .seccionbuttonIndex{
     text-align: center;
     
-    margin: 4%;
+    margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.buttonIndex{
-    height: 150%;
-    width: 100%;
+.imgbuttonIndex{
+    height: 50px;
+    width: 140px;
 }
 
 .rowBotonesAtrasAcercade{
@@ -68,7 +76,7 @@ body{
 /* ----------------------------------JUEGO---------------------------------------- */
 
 .main{
-    background: black;
+    /* background: black; */
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -94,12 +102,13 @@ body{
 }
 
 .tablero{
-    background: red;
+    /* background: red; */
     display: inline-flex;
-    height: 600px;
-    width: 90%;
+    /* height: 600px; */
+    width: 90%; 
     justify-content: center;
     align-items: center;
+    
     /* background: yellow; */
     /* position:absolute; */
     /* top: 20%; */
@@ -117,6 +126,8 @@ body{
 }
 
 .colTablero{
+    background-image: url(../img/Huecos.png);
+    background-size: cover;
     display: inline-block;
     margin: 0;
     /* margin-left: 0px;
@@ -124,15 +135,15 @@ body{
     cursor: pointer;
     /* background: transparent; */
     text-align: center;
-    background: yellow;
+    /* background: yellow; */
    
 }
 
 .contenedorElementoFicha{
     /* display:flex; */
-    background: gray;
-    width: 100px;
-    height: 100px;
+    /* background: white; */
+    width: 80px;
+    height: 80px;
     line-height: 0;
     border: 0px;
     /* background: white; */
