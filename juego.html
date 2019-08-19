@@ -1,225 +1,247 @@
 <!DOCTYPE html>
-<html>
+
 
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-        <!-- <div>
+    <!-- <div>
         <img src="./img/ColorFichaJugador1.png">
     </div>
     <div>
             <img src="./img/ColorFichaJugador1.png">
         </div> -->
-    <div class="main">
+    <div class="mainjuego">
 
-            
-        <div class="tablero">
-
-            <!-- Inicia Columna 1 -->
-
-            <div class="colTablero" id="col1" onclick="ponerFicha(this.id);">
-                <div class="contenedorElementoFicha" id="s11">
-                    <img class="imgFicha col1" id="imgElementoFichas11">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <img src="./img/seccionjuego/Atrás.png" class="botonesatras">
                 </div>
 
-                <div class="contenedorElementoFicha" id="s21">
-                    <img class="imgFicha col1" id="imgElementoFichas21">
+                <div class="col-4">
+                    <img src="./img/seccionjuego/Cómo jugar.png" class="botonesatras">
                 </div>
-
-                <div class="contenedorElementoFicha" id="s31">
-                    <img class="imgFicha col1" id="imgElementoFichas31">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s41">
-                    <img class="imgFicha col1" id="imgElementoFichas41">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s51">
-                    <img class="imgFicha col1" id="imgElementoFichas51">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s61">
-                    <img class="imgFicha col1" id="imgElementoFichas61">
-                </div>
-
             </div>
 
-            <!-- Inicia Columna 2 -->
 
-            <div class="colTablero" id="col2" onclick="ponerFicha(this.id);">
-                <div class="contenedorElementoFicha" id="s12">
-                    <img class="imgFicha col2" id="imgElementoFichas12">
+            <div class="row justify-content-center">
+                <div class="col-max">
+
+
+
+                    <div class="tablero">
+
+
+                        <!-- Inicia Columna 1 -->
+
+                        <div class="colTablero" id="col1" onclick="ponerFicha(this.id);">
+                            <div class="contenedorElementoFicha" id="s11">
+                                <img class="imgFicha col1" id="imgElementoFichas11">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s21">
+                                <img class="imgFicha col1" id="imgElementoFichas21">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s31">
+                                <img class="imgFicha col1" id="imgElementoFichas31">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s41">
+                                <img class="imgFicha col1" id="imgElementoFichas41">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s51">
+                                <img class="imgFicha col1" id="imgElementoFichas51">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s61">
+                                <img class="imgFicha col1" id="imgElementoFichas61">
+                            </div>
+
+                        </div>
+
+                        <!-- Inicia Columna 2 -->
+
+                        <div class="colTablero" id="col2" onclick="ponerFicha(this.id);">
+                            <div class="contenedorElementoFicha" id="s12">
+                                <img class="imgFicha col2" id="imgElementoFichas12">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s22">
+                                <img class="imgFicha col2" id="imgElementoFichas22">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s32">
+                                <img class="imgFicha col2" id="imgElementoFichas32">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s42">
+                                <img class="imgFicha col2" id="imgElementoFichas42">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s52">
+                                <img class="imgFicha col2" id="imgElementoFichas52">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s62">
+                                <img class="imgFicha col2" id="imgElementoFichas62">
+                            </div>
+
+                        </div>
+
+                        <!-- Inicia Columna 3 -->
+
+                        <div class="colTablero" id="col3" onclick="ponerFicha(this.id);">
+                            <div class="contenedorElementoFicha" id="s13">
+                                <img class="imgFicha col3" id="imgElementoFichas13">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s23">
+                                <img class="imgFicha col3" id="imgElementoFichas23">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s33">
+                                <img class="imgFicha col3" id="imgElementoFichas33">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s43">
+                                <img class="imgFicha col3" id="imgElementoFichas43">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s53">
+                                <img class="imgFicha col3" id="imgElementoFichas53">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s63">
+                                <img class="imgFicha col3" id="imgElementoFichas63">
+                            </div>
+
+                        </div>
+
+                        <!-- Inicia Columna 4 -->
+
+                        <div class="colTablero" id="col4" onclick="ponerFicha(this.id);">
+                            <div class="contenedorElementoFicha" id="s14">
+                                <img class="imgFicha col4" id="imgElementoFichas14">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s24">
+                                <img class="imgFicha col4" id="imgElementoFichas24">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s34">
+                                <img class="imgFicha col4" id="imgElementoFichas34">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s44">
+                                <img class="imgFicha col4" id="imgElementoFichas44">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s54">
+                                <img class="imgFicha col4" id="imgElementoFichas54">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s64">
+                                <img class="imgFicha col4" id="imgElementoFichas64">
+                            </div>
+
+                        </div>
+
+                        <!-- Inicia Columna 5 -->
+
+                        <div class="colTablero" id="col5" onclick="ponerFicha(this.id);">
+                            <div class="contenedorElementoFicha" id="s15">
+                                <img class="imgFicha col5" id="imgElementoFichas15">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s25">
+                                <img class="imgFicha col5" id="imgElementoFichas25">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s35">
+                                <img class="imgFicha col5" id="imgElementoFichas35">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s45">
+                                <img class="imgFicha col5" id="imgElementoFichas45">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s55">
+                                <img class="imgFicha col5" id="imgElementoFichas55">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s65">
+                                <img class="imgFicha col5" id="imgElementoFichas65">
+                            </div>
+
+                        </div>
+
+                        <!-- Inicia Columna 6 -->
+
+                        <div class="colTablero" id="col6" onclick="ponerFicha(this.id);">
+                            <div class="contenedorElementoFicha" id="s16">
+                                <img class="imgFicha col6" id="imgElementoFichas16">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s26">
+                                <img class="imgFicha col6" id="imgElementoFichas26">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s36">
+                                <img class="imgFicha col6" id="imgElementoFichas36">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s46">
+                                <img class="imgFicha col6" id="imgElementoFichas46">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s56">
+                                <img class="imgFicha col6" id="imgElementoFichas56">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s66">
+                                <img class="imgFicha col6" id="imgElementoFichas66">
+                            </div>
+
+                        </div>
+
+                        <!-- Inicia Columna 7 -->
+
+                        <div class="colTablero" id="col7" onclick="ponerFicha(this.id);">
+                            <div class="contenedorElementoFicha" id="s17">
+                                <img class="imgFicha col7" id="imgElementoFichas17">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s27">
+                                <img class="imgFicha col7" id="imgElementoFichas27">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s37">
+                                <img class="imgFicha col7" id="imgElementoFichas37">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s47">
+                                <img class="imgFicha col7" id="imgElementoFichas47">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s57">
+                                <img class="imgFicha col7" id="imgElementoFichas57">
+                            </div>
+
+                            <div class="contenedorElementoFicha" id="s67">
+                                <img class="imgFicha col7" id="imgElementoFichas67">
+                            </div>
+
+                        </div>
+
+                    </div>
                 </div>
-
-                <div class="contenedorElementoFicha" id="s22">
-                    <img class="imgFicha col2" id="imgElementoFichas22">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s32">
-                    <img class="imgFicha col2" id="imgElementoFichas32">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s42">
-                    <img class="imgFicha col2" id="imgElementoFichas42">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s52">
-                    <img class="imgFicha col2" id="imgElementoFichas52">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s62">
-                    <img class="imgFicha col2" id="imgElementoFichas62">
-                </div>
-
             </div>
-
-            <!-- Inicia Columna 3 -->
-
-            <div class="colTablero" id="col3" onclick="ponerFicha(this.id);">
-                <div class="contenedorElementoFicha" id="s13">
-                    <img class="imgFicha col3" id="imgElementoFichas13">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s23">
-                    <img class="imgFicha col3" id="imgElementoFichas23">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s33">
-                    <img class="imgFicha col3" id="imgElementoFichas33">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s43">
-                    <img class="imgFicha col3" id="imgElementoFichas43">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s53">
-                    <img class="imgFicha col3" id="imgElementoFichas53">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s63">
-                    <img class="imgFicha col3" id="imgElementoFichas63">
-                </div>
-
-            </div>
-
-            <!-- Inicia Columna 4 -->
-
-            <div class="colTablero" id="col4" onclick="ponerFicha(this.id);">
-                <div class="contenedorElementoFicha" id="s14">
-                    <img class="imgFicha col4" id="imgElementoFichas14">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s24">
-                    <img class="imgFicha col4" id="imgElementoFichas24">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s34">
-                    <img class="imgFicha col4" id="imgElementoFichas34">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s44">
-                    <img class="imgFicha col4" id="imgElementoFichas44">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s54">
-                    <img class="imgFicha col4" id="imgElementoFichas54">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s64">
-                    <img class="imgFicha col4" id="imgElementoFichas64">
-                </div>
-
-            </div>
-
-            <!-- Inicia Columna 5 -->
-
-            <div class="colTablero" id="col5" onclick="ponerFicha(this.id);">
-                <div class="contenedorElementoFicha" id="s15">
-                    <img class="imgFicha col5" id="imgElementoFichas15">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s25">
-                    <img class="imgFicha col5" id="imgElementoFichas25">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s35">
-                    <img class="imgFicha col5" id="imgElementoFichas35">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s45">
-                    <img class="imgFicha col5" id="imgElementoFichas45">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s55">
-                    <img class="imgFicha col5" id="imgElementoFichas55">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s65">
-                    <img class="imgFicha col5" id="imgElementoFichas65">
-                </div>
-
-            </div>
-
-            <!-- Inicia Columna 6 -->
-
-            <div class="colTablero" id="col6" onclick="ponerFicha(this.id);">
-                <div class="contenedorElementoFicha" id="s16">
-                    <img class="imgFicha col6" id="imgElementoFichas16">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s26">
-                    <img class="imgFicha col6" id="imgElementoFichas26">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s36">
-                    <img class="imgFicha col6" id="imgElementoFichas36">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s46">
-                    <img class="imgFicha col6" id="imgElementoFichas46">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s56">
-                    <img class="imgFicha col6" id="imgElementoFichas56">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s66">
-                    <img class="imgFicha col6" id="imgElementoFichas66">
-                </div>
-
-            </div>
-
-            <!-- Inicia Columna 7 -->
-
-            <div class="colTablero" id="col7" onclick="ponerFicha(this.id);">
-                <div class="contenedorElementoFicha" id="s17">
-                    <img class="imgFicha col7" id="imgElementoFichas17">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s27">
-                    <img class="imgFicha col7" id="imgElementoFichas27">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s37">
-                    <img class="imgFicha col7" id="imgElementoFichas37">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s47">
-                    <img class="imgFicha col7" id="imgElementoFichas47">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s57">
-                    <img class="imgFicha col7" id="imgElementoFichas57">
-                </div>
-
-                <div class="contenedorElementoFicha" id="s67">
-                    <img class="imgFicha col7" id="imgElementoFichas67">
-                </div>
-
-            </div>
-
         </div>
 
     </div>
@@ -232,5 +254,3 @@
     <script src="js/main.js">
     </script>
 </body>
-
-</html>
