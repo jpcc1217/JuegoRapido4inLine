@@ -90,6 +90,127 @@ function ganadorplayer1() {
         }
     }
 
+    /* iterar en las diagonales izq-der */
+    for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= 7; j++) {
+            let i1 = i + 1;
+            let i2 = i + 2;
+            let i3 = i + 3;
+            let j1 = j + 1;
+            let j2 = j + 2;
+            let j3 = j + 3;
+            if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
+                alert("ganador player 1");
+                location.href = "seleccionjugadores.html";
+            }
+
+        }
+    }
+
+    for (let i = 1; i <= 4; i++) {
+        for (let j = 1; j <= 7; j++) {
+            let i1 = i + 1;
+            let i2 = i + 2;
+            let i3 = i + 3;
+            let j1 = j + 1;
+            let j2 = j + 2;
+            let j3 = j + 3;
+            if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
+                alert("ganador player 1");
+                location.href = "seleccionjugadores.html";
+            }
+
+        }
+    }
+
+
+    for (let i = 1; i <= 4; i++) {
+        for (let j = 2; j <= 7; j++) {
+            let i1 = i + 1;
+            let i2 = i + 2;
+            let i3 = i + 3;
+            let j1 = j + 1;
+            let j2 = j + 2;
+            let j3 = j + 3;
+            if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
+                alert("ganador player 1");
+                location.href = "seleccionjugadores.html";
+            }
+
+        }
+    }
+
+    /* iterar en las diagonales der-izq */
+    for (let i = 5; i >= 0; i--) {
+        for (let j = 7; j >= 0; j--) {
+            let i1 = i - 1;
+            let i2 = i - 2;
+            let i3 = i - 3;
+            let j1 = j - 1;
+            let j2 = j - 2;
+            let j3 = j - 3;
+            if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
+                alert("ganador player 1");
+                location.href = "seleccionjugadores.html";
+            }
+
+        }
+    }
+
+    for (let i = 1; i <= 7; i++) {
+        for (let j = 7; j >= 4; j--) {
+            let i1 = i - 1;
+            let i2 = i - 2;
+            let i3 = i - 3;
+            let j1 = j - 1;
+            let j2 = j - 2;
+            let j3 = j - 3;
+            if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
+                alert("ganador player 1");
+                location.href = "seleccionjugadores.html";
+            }
+
+        }
+    }
+
+    for (let i = 4; i <= 7; i++) {
+        for (let j = 7; j >= 0; j--) {
+            let i1 = i - 1;
+            let i2 = i - 2;
+            let i3 = i - 3;
+            let j1 = j - 1;
+            let j2 = j - 2;
+            let j3 = j - 3;
+            if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
+                alert("ganador player 1");
+                location.href = "seleccionjugadores.html";
+            }
+
+        }
+    }
+
+   
+
+
+
+    // for (let i = 1; i <= 6; i++) { //numero de diagonales
+    //     for (let j = 1; j <= 3; j++) { //elemento hasta el cual evaluar las diagonales
+    //         let i1 = i + 1;
+    //         let i2 = i + 2;
+    //         let i3 = i + 3;
+    //         let i4 = i + 4;
+    //         let j1 = j + 1;
+    //         let j2 = j + 2;
+    //         let j3 = j + 3;
+    //         let j4 = j + 4;
+    //         if (b.includes("s" + j + i) && b.includes("s" + j1 + i) && b.includes("s" + j2 + i) && b.includes("s" + j3 + i)) {
+    //             alert("ganador player 1");
+    //             location.href = "seleccionjugadores.html";
+    //         }
+
+    //     }
+    // }
+
 }
 
 function ganadorplayer2() {
@@ -128,10 +249,10 @@ function ganadorplayer2() {
         }
     }
 
-    
+
 }
 
-function metodoprueba(){
+function metodoprueba() {
     var a = document.getElementById("imgElementoFichas67");
     alert(a.src);
 }
