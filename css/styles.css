@@ -189,7 +189,7 @@ height: 100px; */
 }
 
 
-@media (min-width: 1000px) and (max-width: 1200px) {
+@media (min-width: 1080px) and (min-height: 1920px) {
 
     .logoimg{
     
@@ -216,9 +216,12 @@ height: 100px; */
         border: 0px;
     }
 
-    body{
+    #index{
         background-image: url(../img/mediaQuerys/1080x1920/Fondob.png);
         background-size:cover;
+    }
+    .mainindex{
+        margin-top: 40%;
     }
 
     #juego{
