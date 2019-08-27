@@ -4,6 +4,8 @@ var srcimg2 = "img/ColorFichaJugador2.png";
 
 var arrayElementos = [];
 
+// id="imgfichaJugador1" src="img/seccionjuego/Jugador 1 seleccionado.png"
+
 function seleccionarInicial() {
 
 }
@@ -54,6 +56,8 @@ function ponerFicha(clickid) {
                 tempb.classList.add("fichap1");
                 ganadorplayer1();
                 jugadorActual = 2;
+                document.getElementById("imgfichaJugador2").src = "img/seccionjuego/Jugador 2 seleccionado.png";
+                document.getElementById("imgfichaJugador1").src = "img/seccionjuego/Jugador 1.png";
                 // alert("turno Jugador"+jugadorActual)
                 break;
             }
@@ -62,6 +66,8 @@ function ponerFicha(clickid) {
             tempb.classList.add("fichap2");
             ganadorplayer2();
             jugadorActual = 1;
+            document.getElementById("imgfichaJugador1").src = "img/seccionjuego/Jugador 1 seleccionado.png";
+            document.getElementById("imgfichaJugador2").src = "img/seccionjuego/Jugador 2.png";
             // alert("turno Jugador"+jugadorActual)
             break;
         }
