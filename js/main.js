@@ -13,6 +13,10 @@ function comojugar(){
     document.getElementById("comojugarseccion").style.display = "initial";
 }
 
+function ganadorventana(){
+    document.getElementById("ganadorseccion").style.display = "initial";
+}
+
 function comojugarcerrar(){
     // document.getElementById("comojugarmain").style.display = "inline";
     document.getElementById("comojugarseccion").style.display = "none";
@@ -83,7 +87,7 @@ function ganadorplayer1() {
             let j3 = j + 3;
             if (b.includes("s" + i + j) && b.includes("s" + i + j1) && b.includes("s" + i + j2) && b.includes("s" + i + j3)) {
                 alert("ganador player 1");
-                location.href = "seleccionjugadores.html";
+                ganadorventana();
             }
 
         }
@@ -96,7 +100,7 @@ function ganadorplayer1() {
             let j3 = j + 3;
             if (b.includes("s" + j + i) && b.includes("s" + j1 + i) && b.includes("s" + j2 + i) && b.includes("s" + j3 + i)) {
                 alert("ganador player 1");
-                location.href = "seleccionjugadores.html";
+                ganadorventana();
             }
 
         }
@@ -113,7 +117,7 @@ function ganadorplayer1() {
             let j3 = j + 3;
             if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
                 alert("ganador player 1");
-                location.href = "seleccionjugadores.html";
+                ganadorventana();
             }
 
         }
@@ -129,7 +133,7 @@ function ganadorplayer1() {
             let j3 = j + 3;
             if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
                 alert("ganador player 1");
-                location.href = "seleccionjugadores.html";
+                ganadorventana();
             }
 
         }
@@ -146,7 +150,7 @@ function ganadorplayer1() {
             let j3 = j + 3;
             if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
                 alert("ganador player 1");
-                location.href = "seleccionjugadores.html";
+                ganadorventana();
             }
 
         }
@@ -163,7 +167,7 @@ function ganadorplayer1() {
             let j3 = j - 3;
             if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
                 alert("ganador player 1");
-                location.href = "seleccionjugadores.html";
+                ganadorventana();
             }
 
         }
@@ -179,7 +183,7 @@ function ganadorplayer1() {
             let j3 = j - 3;
             if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
                 alert("ganador player 1");
-                location.href = "seleccionjugadores.html";
+                ganadorventana();
             }
 
         }
@@ -195,7 +199,7 @@ function ganadorplayer1() {
             let j3 = j - 3;
             if (b.includes("s" + i + j) && b.includes("s" + i1 + j1) && b.includes("s" + i2 + j2) && b.includes("s" + i3 + j3)) {
                 alert("ganador player 1");
-                location.href = "seleccionjugadores.html";
+                ganadorventana();
             }
 
         }
