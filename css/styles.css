@@ -1,74 +1,64 @@
-
-body{
+body {
     /* width: 1080px;
     height: 1920px; */
-     margin: 0;
-     border: 0;
-     /* border-width: 0px;
+    margin: 0;
+    border: 0;
+    /* border-width: 0px;
      border-style: hidden */
- 
     background-image: url(../img/Pantallazo6.png);
-    background-size:cover;
-
-   
-
-    
-     
-    
+    background-size: cover;
 }
 
-.main{
-width: 100%;
-height: 100%;
+.main {
+    width: 100%;
+    height: 100%;
 }
+
 
 /* ----------------INDEX---------------- */
 
-#index{
+#index {
     background-image: url(../img/index/Pantallazo1.png);
-    background-size:cover;
+    background-size: cover;
 }
-.logoimg{
-    
+
+.logoimg {
     width: 200px;
     height: 200px;
 }
 
-
-.rowbuttonIndex{
+.rowbuttonIndex {
     width: 100%;
     height: 100%;
-  
-    
 }
 
-
-.seccionbuttonIndex{
+.seccionbuttonIndex {
     text-align: center;
     margin-top: 2%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.imgbuttonIndex{
+.imgbuttonIndex {
     height: 50px;
     width: 140px;
 }
 
+
 /* --------------------------------Estadisticas----------------------------------- */
 
-.rowestadisticas table{
+.rowestadisticas table {
     margin-left: auto;
     margin-right: auto;
     border: solid;
 }
 
-.tablatituloimg{
-  width: 10%;
-  /* height: 50px; */
+.tablatituloimg {
+    width: 10%;
+    /* height: 50px; */
 }
 
-.tablaimg{
+.tablaimg {
     position: absolute;
     top: 2%;
     left: 30%;
@@ -76,23 +66,22 @@ height: 100%;
     height: 600px;
 }
 
+
 /* ----------------------------------JUEGO---------------------------------------- */
 
-.botonesatras{
-width: 110px;
-height: 60px;
-margin-top: 5%;
-
-/* width: 100px;
+.botonesatras {
+    width: 110px;
+    height: 60px;
+    margin-top: 5%;
+    /* width: 100px;
 height: 100px; */
 }
 
-#columnasbotonestras{
+#columnasbotonestras {
     text-align: center;
-
 }
 
-.mainjuego{
+.mainjuego {
     /* background: black; */
     display: inline-flex;
     justify-content: center;
@@ -101,31 +90,26 @@ height: 100px; */
     height: 100%;
     margin: 0;
     border: 0;
-    
     /* background: transparent; */
-    
     /* top: 15%;
     left: 15%;
     bottom: 15%;
     right: 15%;  */
-
     /* margin: 0px; */
     /* display: inline-flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: auto; */
-    
 }
 
-.tablero{
+.tablero {
     /* background: red; */
     display: inline-flex;
     /* height: 600px; */
-    width: 90%; 
+    width: 90%;
     justify-content: center;
     align-items: center;
-    
     /* background: yellow; */
     /* position:absolute; */
     /* top: 20%; */
@@ -133,16 +117,14 @@ height: 100px; */
     left: 15%;
     bottom: 15%;
     right: 15%;  */
-
     /* margin: 0px; */
-    
     /* margin-left: auto;
     margin-right: auto; */
     /* margin-top: auto;
     margin-bottom: auto; */
 }
 
-.colTablero{
+.colTablero {
     /* background-image: url(../img/Huecos.png); */
     background-size: cover;
     display: inline-block;
@@ -153,10 +135,9 @@ height: 100px; */
     /* background: transparent; */
     text-align: center;
     /* background: yellow; */
-   
 }
 
-.contenedorElementoFicha{
+.contenedorElementoFicha {
     /* display:flex; */
     /* background: white; */
     width: 80px;
@@ -169,7 +150,7 @@ height: 100px; */
     background-image: transparent; */
 }
 
-.contenedorElementoFicha img{
+.contenedorElementoFicha img {
     /* display:inline-block; */
     line-height: 0;
     background: transparent;
@@ -179,58 +160,70 @@ height: 100px; */
     border-style: none;
     vertical-align: bottom;
     /* border-radius: 100%; */
-
 }
 
-
-#a13{
+#a13 {
     width: 100px;
     height: 100px;
 }
 
-
-@media (min-width: 1000px) and (min-height: 1900px) {
-
-    .logoimg{
-    
+@media (width: 1080px) and (height: 1920px) {
+    /* index */
+    .logoimg {
         width: 350px;
         height: 350px;
     }
-
-    .seccionbuttonIndex{
+    .seccionbuttonIndex {
         text-align: center;
         margin-top: 5%;
         margin-left: auto;
         margin-right: auto;
     }
-    
-    .imgbuttonIndex{
+    .imgbuttonIndex {
         height: 128px;
         width: 412px;
     }
-
-    .contenedorElementoFicha{
-        width: 130px;
-        height: 130px;
-        line-height: 0;
-        border: 0px;
-    }
-
-    #index{
+    #index {
         background-image: url(../img/mediaQuerys/1080x1920/Fondob.png);
-        background-size:cover;
+        background-size: cover;
     }
-    .mainindex{
+    .mainindex {
         margin-top: 40%;
     }
-
-    #juego{
+    /*Juego*/
+    #juego {
         background-image: url(../img/mediaQuerys/1080x1920/Fondoa.png);
-        background-size:cover;
+        background-size: cover;
+    }
+    .contenedorElementoFicha {
+        width: 140px;
+        height: 140px;
+        border: 0px;
+    }
+    .tablero {
+        display: inline-flex;
+        width: 90%;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        /*margin-right: auto; */
+        margin-top: 20%;
+        /* margin-bottom: auto; */
+    }
+    .botonesatras {
+        width: 275px;
+        height: 150px;
+        margin-top: 30%;
+        /* margin-left: 10px;
+        margin-right: 20px; */
+    }
+    #columnasbotonestras {
+        text-align: center;
     }
 }
 
-@media (min-width: 360px) and (min-height: 740px) {
+
+/* @media (min-width: 360px) and (min-height: 740px) {
     #index{
         background-image: url(../img/mediaQuerys/1080x1920/Fonda.png);
         background-size:cover;
@@ -240,4 +233,4 @@ height: 100px; */
         background-image: url(../img/mediaQuerys/1080x1920/Fondb.png);
         background-size:cover;
     }
-}
+} */
