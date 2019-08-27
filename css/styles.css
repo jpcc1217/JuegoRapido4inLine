@@ -125,7 +125,6 @@ height: 100px; */
 }
 
 .colTablero {
-    /* background-image: url(../img/Huecos.png); */
     background-size: cover;
     display: inline-block;
     margin: 0;
@@ -144,10 +143,6 @@ height: 100px; */
     height: 80px;
     line-height: 0;
     border: 0px;
-    /* background: white; */
-    /* border-radius: 100%; */
-    /* background: transparent;
-    background-image: transparent; */
 }
 
 .contenedorElementoFicha img {
@@ -166,6 +161,57 @@ height: 100px; */
     width: 100px;
     height: 100px;
 }
+
+/* ------------------------Como Jugar ---------------------- */
+ 
+#comojugarseccion{
+    display: none;
+    background-image: url(../img/comojugar/Fondo\ ventana.png);
+    background-size: cover;
+    position: absolute;
+    width: auto;
+    left: 10%;
+    right: 10%;
+    top: 20%;
+    bottom: 20%;
+    border-radius: 2%;
+}
+
+#comojugarmain{
+    /* margin-top: 20%; */
+    margin-bottom: auto;
+    display: inline-flexbox;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 2%;
+}
+
+#imgcomojugarx{
+    margin-top: 10%;
+    width: 82px;
+    height: 85px;
+}
+
+#imgcomojugartexto{
+    margin-top: 10%;
+    width: 738px;
+    height: 498px;
+}
+
+#imgcomojugarfichas{
+    margin-top: 10%;
+    width: 666px;
+    height: 172px;
+}
+
+/* ------------------------acerca de ---------------------- */
+#imgacercade{
+    width: 692px;
+    height: 596px;
+}
+
+
 
 @media (width: 1080px) and (height: 1920px) {
     /* index */
@@ -205,7 +251,7 @@ height: 100px; */
         width: 90%;
         justify-content: center;
         align-items: center;
-        margin-left: 40px;
+        margin-left: 50px;
         /*margin-right: auto; */
         margin-top: 20%;
         /* margin-bottom: auto; */

@@ -8,6 +8,18 @@ function seleccionarInicial() {
 
 }
 
+function comojugar(){
+    // document.getElementById("comojugarmain").style.display = "inline";
+    document.getElementById("comojugarseccion").style.display = "initial";
+}
+
+function comojugarcerrar(){
+    // document.getElementById("comojugarmain").style.display = "inline";
+    document.getElementById("comojugarseccion").style.display = "none";
+}
+
+
+
 function ponerFicha(clickid) {
 
 
